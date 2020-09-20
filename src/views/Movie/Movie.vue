@@ -3,13 +3,15 @@
     <ul>
         <li v-for="movie in nowPlaying" :key="movie.id">
             {{movie.title}}
-            <img width="300px" height="300px" :src="'https://image.tmdb.org/t/p/original' + movie.poster_path" >
+            <!-- <img width="300px" height="300px" :src="'https://image.tmdb.org/t/p/original' + movie.poster_path" > -->
+            <posterComponents :poster-path="movie.poster_path"> </posterComponents>
         </li>
     </ul>
 </template>
 
-
 <script>
+
+import posterComponents from './Poster.vue'
 
 const axios = require('axios');
 const apiKey = '2d8280011e977622269e13664d038055';
@@ -20,6 +22,9 @@ export default {
         return {
             nowPlaying : []
         }
+    },
+    components : {
+        posterComponents
     },
     mounted : function () {
         axios.get(`https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=en-US&page=`)
