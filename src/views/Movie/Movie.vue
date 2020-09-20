@@ -3,6 +3,7 @@
     <ul>
         <li v-for="movie in nowPlaying" :key="movie.id">
             {{movie.title}}
+            <img width="300px" height="300px" :src="'https://image.tmdb.org/t/p/original' + movie.poster_path" >
         </li>
     </ul>
 </template>
@@ -36,7 +37,6 @@ export default {
         .then(() => {
             // always executed
         })
-
     }
 
 }
