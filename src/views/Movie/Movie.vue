@@ -7,7 +7,7 @@
 
 <script>
 
-import ListComponents from './List.vue'
+import ListComponents from '@/components/Movie/List.vue'
 
 
 export default {
