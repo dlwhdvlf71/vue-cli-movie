@@ -1,5 +1,5 @@
 <template>
-    <img width="300px" height="300px" :src="'https://image.tmdb.org/t/p/original' + posterPath" >
+    <img class="poster_img" :src="'https://image.tmdb.org/t/p/original' + posterPath" >
 </template>
 
 
@@ -13,3 +13,10 @@ export default {
     }
 }
 </script>
+
+<style>
+    .poster_img{
+        /*width: 100%; height: 100%;*/
+        width: 100%; height: 100%;
+    }
+</style>
