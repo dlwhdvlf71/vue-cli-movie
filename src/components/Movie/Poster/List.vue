@@ -16,7 +16,6 @@
 
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
- // eslint-disable-line no-unused-vars
 
 import posterComponents from './Poster.vue'
 
