@@ -3,7 +3,8 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/Movie">Movie(NowPlaying)</router-link> |
+      <router-link to="/Movie">영화</router-link> |
+      <router-link to="/TV">TV</router-link> |
       <router-link to="/Login">Login</router-link>
     </div>
     <router-view/>
@@ -11,6 +12,10 @@
 </template>
 
 <style>
+html{
+  background: black;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -25,10 +30,10 @@
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: aliceblue;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: crimson;
 }
 </style>

@@ -29,7 +29,7 @@ export default {
     data() {
       return {
         swiperOption: {
-          direction: 'vertical',
+          //direction: 'vertical',
           pagination: {
             //el: '.swiper-pagination',
             clickable: true
